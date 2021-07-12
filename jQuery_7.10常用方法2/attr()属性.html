@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>attr 是 attribute 的简写</title>
+		<style type="text/css">
+			img{
+				width: 500px;
+				height: 300px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="picture">
+			<img src="img/beach-boat-fisherman-1144232.jpg"/>
+			<script type="text/javascript" src="lib/jquery-3.5.1.js"></script>
+			<script type="text/javascript">
+				/*attr()方法可以将已经存在的标签的属性进行更改*/
+				/*鼠标划过时利用attr()方法改变图片*/
+				$("img").mouseover(function(){
+					$("img").attr("src","img/https___www.lifeofpix.com_wp-content_uploads_2018_07_splash-fire.jpg");
+					
+				})
+				/*鼠标滑出时利用attr()方法变回原图*/
+				/*由于"链式调用"特性,这里不需要再打$("img")*/
+				.mouseout(function(){
+					$("img").attr("src","img/beach-boat-fisherman-1144232.jpg");
+				})
+			</script>
+		</div>
+	</body>                                                                                                 
+</html>

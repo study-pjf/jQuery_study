@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			#box{
+				width: 200px;
+				height: 200px;
+				background-color: aqua;
+			}
+			#box1{
+				width: 200px;
+				height: 200px;
+				background-color: #333333;
+			}
+			#box2{
+				width: 200px;
+				height: 200px;
+				background-color: aqua;
+			}
+			#box3{
+				width: 200px;
+				height: 200px;
+				background-color: #333333;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="box">
+		</div>
+		<div id="box1">
+		</div>
+		<div id="box2">
+		</div>
+		<div id="box3">
+		</div>
+		<script type="text/javascript" src="lib/jquery-3.5.1.js"></script>
+		<script type="text/javascript">
+			/*两种方法都可以输出元素的标签对中的内容*/
+			$("#box").html("你好？");
+			$("#box1").text("你好！");
+			/*两者的区别html()方法可以识别字符串中的标签,而text()方法只会输出字符串*/
+			$("#box2").html("<img width='150px' src='img/beach-boat-fisherman-1144232.jpg'/>");
+			$("#box3").text("<img width='150px' src='img/beach-boat-fisherman-1144232.jpg'/>");
+		</script>
+	</body>
+</html>

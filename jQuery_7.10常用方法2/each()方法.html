@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<h1></h1>
+		<h1></h1>
+		<h1></h1>
+		<h1></h1>
+		<h1></h1>
+		<h1></h1>
+		<h1></h1>
+		<script type="text/javascript" src="lib/jquery-3.5.1.js"></script>
+		<script type="text/javascript">
+			/*each()方法遍历选中的DOM节点,接着用html()方法将index()方法显示的下标写如DOM*/
+			$("h1").each(function(){
+				$(this).html($(this).index());
+			});
+		</script>
+	</body>
+</html>

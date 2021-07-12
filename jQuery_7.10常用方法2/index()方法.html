@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>index（）方法 返回所选元素在列表中的序号</title>
+		<style type="text/css">
+			button{
+				width: 100px;
+				height: 50px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="button">
+			<button>我是按钮</button>
+			<button>我是按钮</button>
+			<button>我是按钮</button>
+			<button>我是按钮</button>
+			<button>我是按钮</button>
+			<button>我是按钮</button>
+		</div>
+		<script type="text/javascript" src="lib/jquery-3.5.1.js"></script>
+		<script>
+			/*当点击按钮时返回所选元素在列表中下标的序号*/
+			 $("button").click(function(){
+				var n = $(this).index();
+				alert(n);
+			});
+		</script>
+	</body>
+</html>
